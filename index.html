@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Thing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel=icon href="images/favicon.ico" sizes="16x16" type="image/png">
     <!-- Loading Bootstrap -->
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,87 +13,223 @@
 
     <!-- Loading Flat UI Pro -->
     <link href="css/flat-ui.css" rel="stylesheet">
-
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
 
-      <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-      <!--[if lt IE 9]>
-        <script src="dist/js/vendor/html5shiv.js"></script>
-        <script src="dist/js/vendor/respond.min.js"></script>
-      <![endif]-->
+
     </head>
-    <body>
-      <div class="container">
-        <div class="row demo-row">
-          <br>
-          <div class="col-xs-12">
-            <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
-                  <span class="sr-only">Toggle navigation</span>
-                </button>
-                <a class="navbar-brand" href="#">Things</a>
-              </div>
-              <div class="collapse navbar-collapse" id="navbar-collapse-01">
-                <ul class="nav navbar-nav navbar-left">
-                  <li><a href="#fakelink">Menu Item<span class="navbar-unread">1</span></a></li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages <b class="caret"></b></a>
-                    <span class="dropdown-arrow"></span>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#fakelink">About Us</a></li>
-                 </ul>
-                 <form class="navbar-form navbar-right" action="#" role="search">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
-                      <span class="input-group-btn">
-                        <button type="submit" class="btn"><span class="fui-search"></span></button>
-                      </span>
-                    </div>
+    <body >
+<div class="container">
+      <div class="row demo-row">
+        <br>
+        <div class="col-xs-12">
+          <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+              <a class="navbar-brand" href="#home">Things</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-01">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#podcast">Podcast</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#essays">Essays</a></li>
+                <li><a href="#about">About</a></li>
+               </ul>
+               <form class="navbar-form navbar-right" action="#" role="search">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn"><span class="fui-search"></span></button>
+                    </span>
                   </div>
-                </form>
-              </div><!-- /.navbar-collapse -->
-            </nav><!-- /navbar -->
-          </div>
-          <br>
+                </div>
+              </form>
+            </div><!-- /.navbar-collapse -->
+          </nav><!-- /navbar -->
+        </div>
+      </div>
+      </div>
 
-        <div class="demo-headline">
+      <div class="container">
+
+
+
+        <div class="demo-headline" id="home">
             <div class="logo"></div>
-          <div class="row"> <h1 class="demo-logo"> Thing Podcast </h1> </div>
+          <div class="row"> <h1 class="demo-logo"> Favorite Things </h1> </div>
+          <div class="row"> <p class="demo-logo"> This is a website dedicated to everything about people's favorite things. There are interviews, podcasts and essays. Check it out.  </p> </div>
           </div>
 
-          <div class="container">
-          <div class="row">
-            <h3 class="text-muted" > Listen here </h3>
-
+<div class="row" id="podcast">
+<center>  <h2 > Podcast </h2> </center>
+<br>
+<br>
+          <div class="container listen">
+<div class="card">
+            <h3 class="text-muted" > Episode One: Symbols & Cymbals </h3>
          <!-- /demo-headline -->
-
         <audio controls>
           <source src="audio/thingPodcastTest.ogg" type="audio/ogg">
           <source src="audio/thingPodcastTest.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
         </audio>
+        <br>
+
+      </div>
+      <br>
+        <br>
+      <div class="card">
+        <h3 class="text-muted" > Episode Two </h3>
+     <!-- /demo-headline -->
+    <audio controls>
+      <source src="audio/thingPodcastTest.ogg" type="audio/ogg">
+      <source src="audio/thingPodcastTest.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
   </div>
+</div>
+</div>
+
+<div class="container gallery" id="gallery">
+<div class="row">
+
+  <h2 style="text-align:center">Gallery</h2>
+  <br>
+  <br>
+  <div class="row">
+    <div class="column">
+      <img class="mainImages" src="images/audiblelogo.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img class="mainImages" src="images/milkbottles.jpg"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img class="mainImages" src="images/swanAndMallard.png"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img class="mainImages" src="images/combo.jpg"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+
+    <div class="modal-content">
+<span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/audiblelogo.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/milkbottles.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/swanAndMallard.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/combo.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column">
+        <img class="demo cursor" src="images/audiblelogo.png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/milkbottles.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/swanAndMallard.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/combo.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<br>
+
+<div class="container" id="essays">
+  <h2 style="text-align:center"> Essays </h2>
+  <br>
+  <br>
+  <center>
+  <div class="row">
+
+    <div class="card">
+      <img src="images/tram.jpg" alt="tram" style="width:100%">
+      <div class="container">
+        <h4><b>Tram</b></h4>
+        <p>Trams, trains, monorails, rollercaosters, everything that operates on a railway system has a certain predeterminationist quality to it. A car or bike or unicycle contains in its future so many possible routes. It could turn left or right or go sideways or flip over. It allows for autonomy and unpredictability. It’s not just that the ey can go left or right, but that they can go so many different permutations of left or right. The rails though, they let you know exactly where something is going to go. They are the closest that humans have come to reduce something as complex as movement to tertiary. They can go forward or backwards or be still. Not many other options. We can thus see its future course laid out there right in front of us in two metal strips crosshatched with stabilizing wood. These rail things are perfect models of our our attempts to create order in the physical universe. It’s because trams are a model of order that I ordered a model tram. There seemed to be something almost anti-mystical about a tram. In mysticism there is always a secret part that remains hidden to human eyes. The way its moves are all mechanical. In keeping with the orderliness of the trams, the model came with instructions in 7 different languages. These instructions were my railing to guide me towards the completed product. I expected the assembly to be a nightmare, but it was a blast. A dream. It consisted of fitting toothpicks into slots and connecting gears to other gears. On completion the tram had a whole innerworking of wooden gears which turned one another as the tram moves, the grooves of the wheels fitting neatly into the grooves of the rail. Everything in it working in proper order, all of them obeying the rules. It was a little factory of motion. Everything is connected to every other thing by the series of gears and teeth. When you push the tram you can see a display of fundamental order. Everything working together, its insides busy with motion.
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="card">
+      <img src="images/seal.jpg" alt="tram" style="width:100%">
+      <div class="container">
+        <h4><b>Seal</b></h4>
+        <p>	The one I have, it has a wooden handle with a screw on the bottom to allow for different seals to be spun on and off of it, the seal itself being an interchangeable part.
+	After they made the seal they would break the mold so that no one else could go around claiming to be you leaving your distinct imprint. The sealing wax I have is all shaped in little different colored stars, they look like candy. It also comes with two spoons. The process is that you place the little candy-dot of the color of your choice. In the spoon’s cup and then you put a lighter underneath the bowl of the spoon. You (or at least I) feel like a heroin addict as I wait for the little clump of wax to melt into this bubbling goo. It takes a while and the spoon’s bottom goes black as you do it.
+	Once the wax it is you want to seal. The wax pools up as you do. And then you come down with the seal and squash it into shape. Expressing your individuality the exact same way each time. The wax remembers you. That’s the value and function of wax: first yo be all hot and susceptible to change and then once it’s been changed to go unchanged, to remain in place. To keep the shape of whatever it had smashed into it. Now the question is: are you a seal or the wax?
+
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="card">
+      <img src="images/katana.jpg" alt="tram" style="width:100%">
+      <div class="container">
+        <h4><b>Katana</b></h4>
+        <p>	The tip of the katana look a lot like the tip of highlighters. There’s that angle to them. In the case of the highlighter it allows for easier and better contact with the page, the slant matching the slant of the page. In the case of the katana it allows for better impaling of your enemy. The katana was an expensive weapon popular with nobility. It had a younger sibling, the wakizashi. What makes the katana so impressive, so enthralling is its ability to cut, how shrp it is. The gentle backwards curve of the blade. The metal is folded into perfection.
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="card">
+      <img src="images/map.jpg" alt="tram" style="width:100%">
+      <div class="container">
+        <h4><b>Maps</b></h4>
+        <p>	There are the little nations of the Balkans all slotted together next to each other, then there’s Yemen and Oman providing the southern rim to the Arabian peninsula, there’s the ragged Western edges of Russia zigging and zagging against the ragged Eastern edges of Poland, there’s Italy trying on its boot through the midsection of the Mediterranean, Canada crumbling up from solid land mass into chunks of islands as it moves North East, the islands of Hawaii keeping each other company way out there in the middle of the Pacific, the compass rose keeping it all together. I like the idea of being able to roll the world up into a baton. The maps are decoration but also information. Maps let you know what will be somewhere before you even get there. This map of the world was constructed slowly over time from so many different expeditions gone wrong or right. Thy can crinkle or tear, whole continents removed. There are so many different projections, distortions of the reality of our fat Earth into a 2D replica. The question is not whether it’ll be distorted but how There is a mathematical proof to show that you never need more than four colors to color a map. The map is not the territory.
+
+        </p>
+      </div>
+    </div>
+
+  </div>
+</center>
 </div>
 
         <div class="row">
           <div class="col-xs-5">
-            <h3 class="demo-panel-title">Classic</h3>
-          <p>  Daniel Olivieri is a life long mammal. </p>
+            <h3 class="demo-panel-title">About</h3>
+          <p>  Daniel Olivieri is a life long mammal. He enjoys writing, programming, and having a spinal column. Contact him at dfolivieri@gmail.com </p>
           </div> <!-- /sliders -->
         </div>
 
       <footer>
-        <div class="container">
+        <div class="container" id="about">
           <div class="row">
 
 <p> by Daniel Olivieri </p>
@@ -101,6 +237,46 @@
           </div>
         </div>
       </footer>
+<!-- light box javascript -->
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
